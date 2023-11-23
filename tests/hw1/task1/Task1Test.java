@@ -1,9 +1,9 @@
-package hw1;
+package hw1.task1;
 
 import java.util.Arrays;
 import java.util.List;
 
-import static hw1.Task1.averageAllEven;
+import static hw1.task1.Task1.averageAllEven;
 import static org.junit.jupiter.api.Assertions.*;
 
 class Task1Test {
