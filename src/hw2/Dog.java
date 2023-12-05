@@ -9,7 +9,7 @@ public class Dog extends Animal {
     }
 
     public void makeBark() {
-        System.out.printf("%s is barking...", getName());
+        System.out.printf("the %s barks...", getName());
     }
 
     @Override
