@@ -1,7 +1,7 @@
 package hw2;
 
 public class Cat extends Animal {
-    boolean hasWool;
+    private final boolean hasWool;
 
     public Cat(String name, int age, boolean hasWool) {
         super(name, age);
@@ -9,7 +9,7 @@ public class Cat extends Animal {
     }
 
     public void makeSound() {
-        System.out.printf("The %s purrs...", getName());
+        System.out.printf("The %s purrs...\n", getName());
     }
 
     @Override

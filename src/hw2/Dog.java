@@ -1,7 +1,7 @@
 package hw2;
 
 public class Dog extends Animal {
-    private boolean hasTale;
+    private final boolean hasTale;
 
     public Dog(String name, int age, boolean hasTale) {
         super(name, age);
@@ -9,7 +9,7 @@ public class Dog extends Animal {
     }
 
     public void makeBark() {
-        System.out.printf("the %s barks...", getName());
+        System.out.printf("the %s barks...\n", getName());
     }
 
     @Override
