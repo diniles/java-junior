@@ -6,7 +6,7 @@ public class StudentSerialization {
     public static void serializeObject(Student student, String fileName) {
         try (ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream(fileName))) {
             oos.writeObject(student);
-            System.out.println("Serialization successful");
+            System.out.println("Serialization successful\n");
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -16,7 +16,7 @@ public class StudentSerialization {
         Student student = null;
         try (ObjectInputStream ois = new ObjectInputStream(new FileInputStream(fileName))) {
             student = (Student) ois.readObject();
-            System.out.println("Deserialization successful");
+            System.out.println("Deserialization successful\n");
         } catch (IOException | ClassNotFoundException e) {
             e.printStackTrace();
         }
