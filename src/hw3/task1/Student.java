@@ -1,4 +1,4 @@
-package hw3;
+package hw3.task1;
 
 import java.io.Serial;
 import java.io.Serializable;
